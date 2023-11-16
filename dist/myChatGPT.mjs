@@ -1368,7 +1368,7 @@ var ExtensionBlocks = /*#__PURE__*/function () {
       // { "role": "system", "content": "あなたは小学生に優しくなんでも短い文章で答えてくれるお手伝いさんです。" },
       {
         "role": "system",
-        "content": "You are the nanny who kindly answers everything to elementary school students. Please answer any question in 50 words or less and in a friendly tone."
+        "content": "You are the nanny who kindly answers everything to elementary school students. Please answer any question in 30 words or less and in a friendly tone."
       }];
     }
 
