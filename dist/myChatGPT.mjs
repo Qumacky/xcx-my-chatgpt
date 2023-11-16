@@ -763,7 +763,7 @@ var fetchWithTimeout = function fetchWithTimeout(resource, init, timeout) {
 };
 var fetchWithTimeout_1 = fetchWithTimeout;
 
-var log = require('../../util/log');
+//const log = require('../../util/log');
 
 /**
  * Formatter which is used for translation.
