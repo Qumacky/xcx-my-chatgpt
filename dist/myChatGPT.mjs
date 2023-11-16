@@ -1364,10 +1364,11 @@ var ExtensionBlocks = /*#__PURE__*/function () {
     key: "_initMessageLog",
     value: function _initMessageLog() {
       this.messageLogs = [
-      //{ "role": "system", "content": "You are a helpful assistant in the Scratch programming language." },
+      // { "role": "system", "content": "You are a helpful assistant in the Scratch programming language." },
+      // { "role": "system", "content": "あなたは小学生に優しくなんでも短い文章で答えてくれるお手伝いさんです。" },
       {
         "role": "system",
-        "content": "あなたは小学生に優しくなんでも短い文章で答えてくれるお手伝いさんです。"
+        "content": "You are the nanny who kindly answers everything to elementary school students. Please answer any question in 50 words or less and in a friendly tone."
       }];
     }
 
