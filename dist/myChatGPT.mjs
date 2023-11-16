@@ -1343,7 +1343,6 @@ var ExtensionBlocks = /*#__PURE__*/function () {
   //         formatMessage = runtime.formatMessage;
   //     }
   // }
-
   function ExtensionBlocks(runtime) {
     _classCallCheck(this, ExtensionBlocks);
     /**
@@ -1351,7 +1350,8 @@ var ExtensionBlocks = /*#__PURE__*/function () {
      * @type {Runtime}
      */
     this.runtime = runtime;
-    this.apiKey = window.sessionStorage.getItem('chatGptApiKey') || '';
+    // this.apiKey = window.sessionStorage.getItem('chatGptApiKey') || '';
+    this.apiKey = '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';
     this.maxTokens = 300;
     this.temperature = 1;
     this.timeout = 30000;
@@ -1429,11 +1429,14 @@ var ExtensionBlocks = /*#__PURE__*/function () {
               defaultValue: this.timeout
             }
           }
-        }, {
-          opcode: 'setApiKey',
-          blockType: blockType.COMMAND,
-          text: 'APIキーをセット'
-        }],
+        }
+        // {
+        //     opcode: 'setApiKey',
+        //     blockType: BlockType.COMMAND,
+        //     text: 'APIキーをセット',
+        // },
+        ],
+
         menus: {}
       };
     }
@@ -1492,12 +1495,11 @@ var ExtensionBlocks = /*#__PURE__*/function () {
       this._lastQuestion = '';
       this._initMessageLog();
     }
-  }, {
-    key: "setApiKey",
-    value: function setApiKey() {
-      this.apiKey = window.prompt('APIキーを入力してください');
-      window.sessionStorage.setItem('chatGptApiKey', this.apiKey);
-    }
+
+    // setApiKey() {
+    //     this.apiKey = window.prompt('APIキーを入力してください');
+    //     window.sessionStorage.setItem('chatGptApiKey', this.apiKey);
+    // }
   }, {
     key: "setMaxTokens",
     value: function setMaxTokens(args) {
@@ -1516,7 +1518,7 @@ var ExtensionBlocks = /*#__PURE__*/function () {
   }], [{
     key: "EXTENSION_NAME",
     get:
-    //SESSION_STORAGE_KEY_CHATGPT_API_KEY = 'chatGptApiKey';
+    // SESSION_STORAGE_KEY_CHATGPT_API_KEY = 'chatGptApiKey';
 
     /**
      * @return {string} - the name of this extension.
